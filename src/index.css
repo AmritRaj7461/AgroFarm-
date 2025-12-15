@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ---------- PDF SAFE STYLES ---------- */
+.pdf-safe {
+  background: #020617 !important;
+  color: #ffffff !important;
+}
+
+.pdf-safe * {
+  background: transparent !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+}
